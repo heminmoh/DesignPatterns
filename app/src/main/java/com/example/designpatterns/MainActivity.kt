@@ -1,8 +1,15 @@
 package com.example.designpatterns
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+fun main(args: Array<String>)
+{
 
-class Main{
+    //Singleton Design Pattern Implementation
+
+    println(SingletonImplementation.DataInAccess)
+    println("Result of add:  ${SingletonImplementation.add(10,15)}")
+
+
+
+
 
 }
