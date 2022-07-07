@@ -6,7 +6,8 @@ fun main(args: Array<String>)
     //Singleton Design Pattern Implementation
 
     println(SingletonImplementation.DataInAccess)
-    println("Result of add:  ${SingletonImplementation.add(10,15)}")
+  //  SingletonImplementation.buildService(APIInterface::class.java)
+    println("Result of add:  ${SingletonImplementation.addNumbers(8,7)}")
 
 
 
