@@ -4,6 +4,7 @@ import okhttp3.Cache
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.math.BigDecimal
 
 object SingletonImplementation {
         init
@@ -13,10 +14,15 @@ object SingletonImplementation {
         var DataInAccess = "All Attributes accessible"
 
 
-    fun addNumbers(firstNum:Int,secondNum:Int):Int
+    fun operation(firstNum: Int, secondNum:Int )
     {
-        return firstNum.plus(secondNum)
+        println(firstNum.plus(secondNum))
+        println(firstNum.minus(secondNum))
+        println(firstNum * secondNum)
+        println( String.format("%.3f",  firstNum.toDouble() / secondNum).toDouble())
+
     }
+
 
 //   private var checkForInternet :Boolean = true //// Check Internet
 //    private const val url ="https://pixabay.com/api/"
