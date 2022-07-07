@@ -9,12 +9,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnSingleton : Button
     private lateinit var btnBuilder : Button
     private lateinit var btnFactory : Button
+    private lateinit var btnPrototype : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnSingleton = findViewById(R.id.singleton)
         btnBuilder = findViewById(R.id.builder)
         btnFactory = findViewById(R.id.factory)
+        btnPrototype = findViewById(R.id.prototype)
 
 
         //Singleton Design Pattern Implementation
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
             println(currency(Country.UK)?.code() ?: noCurrencyCode)
         }
 
-
+        btnPrototype.setOnClickListener{
+            val bike = Bike()
+            val basicBike = bike.clone()
+            val advancedBike = makeJaguar(basicBike)
+            println("Prototype Design Pattern: " + advancedBike.model!!)
+        }
     }
 }

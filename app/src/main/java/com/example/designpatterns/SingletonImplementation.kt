@@ -1,3 +1,13 @@
+/*
+Singleton Design Pattern
+
+ Restricts the instantiation of
+ a class to one "single" instance.
+ This is useful when exactly one
+ object is needed to coordinate actions
+  across the system.
+ */
+
 package com.example.designpatterns
 
 import okhttp3.Cache
