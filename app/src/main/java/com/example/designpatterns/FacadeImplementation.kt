@@ -27,9 +27,10 @@ class Memory {
 class Computer(private val processor: CPU = CPU(), private val ram: Memory = Memory(),
                private val hd: HardDrive = HardDrive()) {
     companion object {
-        const val BOOT_ADDRESS = 0L
         const val BOOT_SECTOR = 0L
+        const val BOOT_ADDRESS = 0L
         const val SECTOR_SIZE = 0
+
     }
 
     fun start() {
